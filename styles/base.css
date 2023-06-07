@@ -1,0 +1,83 @@
+body {
+    font-family: 'Belleza', sans-serif;
+}
+
+header, h3, footer {
+    background-color: rgb(179, 27, 27);
+    color: white;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+img {
+    margin-right: 2rem;
+    border-radius: 8px;
+    width: 75px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+nav {
+    background-color: rgb(110, 131, 135);
+    margin: 0 auto;
+    max-width: 800px;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: center;
+}
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color:black;
+    color: white;
+}
+.active {
+    background-color: rgb(230, 199, 156);
+}
+
+main {
+    max-width: 770px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    gap: 1rem;
+}
+main h2 {
+    grid-row: 1 / 2;
+    margin: 0; 
+}
+main section h3 {
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem;
+}
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}    
+#learning-activities {   
+    grid-row: 2 / 3;
+}    
+
+#information {  
+    grid-row: 3 / 4;    
+}
+
+footer { 
+    text-align: center;
+    font-size: small;
+    padding: 5px;
+    margin-top: 1rem;
+}

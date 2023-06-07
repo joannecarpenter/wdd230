@@ -1,7 +1,5 @@
 body {
-    font-family: 'Merriweather', serif;
-    font-family: 'PT Serif Caption', serif;
-    /* font-family: 'Roboto', sans-serif;  <--Course Example Code, but doesn't match google fonts site */
+    font-family: 'Roboto', sans-serif;
 }
 
 header, main, footer {
