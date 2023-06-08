@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Quicksand&display=swap');
+
+html {
+    background-color: #FEE9E1;
+}
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2em;
+}
+img {
+    max-width: 100%;
+}
+main h2, main h3, main h4 {
+    font-family: 'Diphylleia', serif;
+    color: black;
+}
+header {
+    padding: 1em;
+    text-align: center;
+    background-color: #64B6AC;
+    font-family: 'Diphylleia', serif;
+    color: white;
+}
+
+p, main ul {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    padding: 1em;
+}
+div ul {
+    padding-left: 4em;
+    padding-top: 0;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #e3dddd;
+}
+.colors td {
+    width: 20%;
+    height: 3em;
+}
+.primary {
+    background-color: #64B6AC;
+}
+.secondary {
+    background-color: #FEE9E1;
+}
+.accent1 {
+    background-color: #C0FDFB;
+}
+.accent2 {
+    background-color: #FAD4C0;
+}
+.accent3 {
+    background-color: #B09E99;
+}
+
+nav {
+  background-color: #B09E99;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  padding: 1em;
+  min-width: 70px;
+}
+nav a:link, nav a:visited {
+  color: black;
+}
+nav a:hover {
+  color: black;
+  background-color: white;
+}
