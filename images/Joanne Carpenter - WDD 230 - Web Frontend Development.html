@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanne Carpenter - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Joanne Carpenter - WDD 230 - Web Frontend Development - course assignment portal">
+    <meta name="author" content="Joanne Carpenter">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Joanne Carpenter - WDD 230 - Web Frontend Development_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Joanne Carpenter - WDD 230 - Web Frontend Development_files/base.css">
+    <link rel="stylesheet" href="./Joanne Carpenter - WDD 230 - Web Frontend Development_files/larger.css">
+    <link rel="icon" href="http://127.0.0.1:5500/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="./Joanne Carpenter - WDD 230 - Web Frontend Development_files/img-joanne.jpg" alt="Picture of Joanne">
+        <h1>Joanne Carpenter</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html">Chamber</a></li>
+            <li><a href="http://127.0.0.1:5500/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section id="learning-activities" class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>Week 01: <a href="http://127.0.0.1:5500/index.html">Layout</a> | <a href="http://127.0.0.1:5500/week01/media-query.html">Media Query</a> | <a href="http://127.0.0.1:5500/index.html#">JS Pen</a></li>
+                <li>Week 02: <a href="http://127.0.0.1:5500/week02/design.html">Design HTML</a></li>
+                <li>Week 03: <a href="http://127.0.0.1:5500/index.html#"></a></li>
+                <li>Week 04: <a href="http://127.0.0.1:5500/index.html#"></a></li>
+                <li>Week 05: <a href="http://127.0.0.1:5500/index.html#"></a></li>
+                <li>Week 06: <a href="http://127.0.0.1:5500/index.html#"></a></li>
+            </ul>
+        </section>
+        <section id="information" class="card">
+            <h3>Information</h3>
+            <ul>
+                <li><textarea id="location" placeholder="Location Info"></textarea></li>
+                <li><textarea id="weather" placeholder="Weather Info"></textarea></li>
+                <li><textarea id="visits" placeholder="Visits Info"></textarea></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="year">2023</span> • Joanne Carpenter • North Carolina</p>
+        <p>Last Modification: <span id="lastModified">Mon Jun 12 2023 17:50:18 GMT-0400 (Eastern Daylight Time)</span></p>
+    </footer>
+    <script src="./Joanne Carpenter - WDD 230 - Web Frontend Development_files/getDates.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
