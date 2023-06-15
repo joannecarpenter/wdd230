@@ -46,13 +46,15 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2fr 2fr;
     gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 main h2 {
     grid-row: 1 / 2;
     margin: 0;
     align-self: center;
-    color: #4F3130;
+    /* color: #4F3130; */
 }
 
 main section h3 {
@@ -133,6 +135,14 @@ footer {
     color: white;
 }
 
+/* dark mode button */
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 4rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */ 
 .open li {
 	display: block;
