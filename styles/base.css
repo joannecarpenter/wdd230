@@ -14,37 +14,29 @@ header {
     padding: 20px;
     margin: 0 auto;
 }
+
 img {
     margin-right: 2rem;
     border-radius: 8px;
     width: 75px;
     filter: drop-shadow(0 0 0.75rem black);
 }
-nav {
-    
+
+nav {  
     background-color: #F0E5D1;
     margin: 0 auto;
     max-width: 800px;
 }
+
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
     text-align: center;
 }
-nav a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-nav a:hover {
-    background-color: #4F3130;
-    color: white;
-}
+
 .active {
     background-color: #D8BD8A;
-}
+} 
 
 main {
     max-width: 770px;
@@ -55,28 +47,34 @@ main {
     grid-template-rows: 0.5fr 2fr 2fr;
     gap: 1rem;
 }
+
 main h2 {
     grid-row: 1 / 2;
     margin: 0;
     align-self: center;
     color: #4F3130;
 }
+
 main section h3 {
     text-align: center;
     margin-top: 0;
     padding: 1rem;
 }
+
 main a:link {
     color: black;
 }
+
 main a:visited {
     color: #4F3130;
 }
+
 .card {
     border: 1px solid black;
     border-radius: 8px;
     overflow: hidden;
 }    
+
 #learning-activities {   
     grid-row: 2 / 3;
 }    
@@ -90,4 +88,56 @@ footer {
     font-size: small;
     padding: 5px;
     margin-top: 1rem;
+}
+
+/* small navigation menu */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #F0E5D1;
+	color: #000;
+ 	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "x";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.navigation li a:hover, navigation li a:active {
+	background-color: #4F3130;
+    color: white;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */ 
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
 }
