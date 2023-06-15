@@ -2,10 +2,11 @@ body {
     font-family: 'Belleza', sans-serif;
 }
 
-header, h3, footer {
-    background-color: rgb(179, 27, 27);
+header, footer, h3 {
+    background-color: #753742;
     color: white;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -20,7 +21,8 @@ img {
     filter: drop-shadow(0 0 0.75rem black);
 }
 nav {
-    background-color: rgb(110, 131, 135);
+    
+    background-color: #F0E5D1;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -37,11 +39,11 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    background-color:black;
+    background-color: #4F3130;
     color: white;
 }
 .active {
-    background-color: rgb(230, 199, 156);
+    background-color: #D8BD8A;
 }
 
 main {
@@ -55,12 +57,20 @@ main {
 }
 main h2 {
     grid-row: 1 / 2;
-    margin: 0; 
+    margin: 0;
+    align-self: center;
+    color: #4F3130;
 }
 main section h3 {
     text-align: center;
     margin-top: 0;
     padding: 1rem;
+}
+main a:link {
+    color: black;
+}
+main a:visited {
+    color: #4F3130;
 }
 .card {
     border: 1px solid black;
