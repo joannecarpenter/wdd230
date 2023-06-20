@@ -130,7 +130,7 @@ footer {
 	color: black;
 }
 
-.navigation li a:hover, navigation li a:active {
+.navigation li a:hover {
 	background-color: #4F3130;
     color: white;
 }

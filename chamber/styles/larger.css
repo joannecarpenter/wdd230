@@ -1,0 +1,37 @@
+@media screen and (min-width: 640px) {
+    h1 {
+        font-size: 48px;
+    }
+    
+    header h2 {
+        font-size: 32px;
+    }
+    
+    header img {
+        width: 219px;
+        height: auto;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    } 
+
+    .info-card-box {
+        flex-direction: row;
+      }
+
+    .container {
+        flex-direction: row;
+    }
+
+    
+}
