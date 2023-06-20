@@ -63,7 +63,7 @@ header img {
   grid-column: 1 / 2;
   grid-row: 1 / span 2;
   align-self: center;
-  width: 180px;
+  max-width: 150px;
   height: auto;
 }
 
