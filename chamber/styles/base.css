@@ -50,7 +50,7 @@ header {
     padding: 2em;
     text-align: center;
     font-size: 20px;
-    background-color: #127475;
+    background-color: #0e5b5d;
     background-size: 900px 250px;
     font-family: 'Diphylleia', serif;
     color: white;
@@ -128,7 +128,7 @@ section {
 
 footer {
   padding: 2rem;
-  background-color: #127475;
+  background-color: #0e5b5d;
   text-align: center;
 }
 
