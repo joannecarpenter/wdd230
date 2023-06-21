@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Activity</title>
+    <meta name="description" content="WDD230 activity practicing lazy loading images">
+    <meta name="author" content="Joanne Carpenter">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Activity</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="images/calla.png" loading="lazy" alt="dark pink calla lilies" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/rosemary.png" loading="lazy" alt="rosemary bush" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/roses.png" loading="lazy" alt="light pink teacup roses" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/sunflower.png" loading="lazy" alt="sunflower plant yet to bloom" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/tree.png" loading="lazy" alt="small plane tree with green leaves" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/weed.png" loading="lazy" alt="small plant with white flowers and yellow centers" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> &bull; Joanne Carpenter &bull; demo project for WDD230 course</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
