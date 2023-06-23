@@ -14,15 +14,19 @@ header {
     padding: 20px;
     margin: 0 auto;
 }
-
-img {
-    margin-right: 2rem;
-    border-radius: 8px;
-    width: 75px;
-    filter: drop-shadow(0 0 0.75rem black);
+.profile picture {
+    width: 100%;
 }
 
-nav {  
+.profile img {
+    margin-right: 2rem;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 0.75rem black);
+    max-width: 75px;
+    height: auto;
+}
+
+nav {
     background-color: #F0E5D1;
     margin: 0 auto;
     max-width: 800px;
@@ -36,25 +40,19 @@ ul {
 
 .active {
     background-color: #D8BD8A;
-} 
+}
 
 main {
     max-width: 770px;
     justify-content: center;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
-    gap: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 main h2 {
-    grid-row: 1 / 2;
-    margin: 0;
+    margin: 2rem;
     align-self: center;
-    /* color: #4F3130; */
 }
 
 main section h3 {
@@ -75,17 +73,17 @@ main a:visited {
     border: 1px solid black;
     border-radius: 8px;
     overflow: hidden;
-}    
-
-#learning-activities {   
-    grid-row: 2 / 3;
-}    
-
-#information {  
-    grid-row: 3 / 4;    
+}
+#information {
+    margin-top: 1rem;
+ }
+ 
+iframe {
+    width: 100%;
+    margin-top: 1rem;
 }
 
-footer { 
+footer {
     text-align: center;
     font-size: small;
     padding: 5px;
@@ -116,6 +114,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .navigation li {
@@ -143,11 +143,46 @@ footer {
 	font-size: 2rem;
 	cursor: pointer;
 }
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */ 
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
 	display: block;
 	width: 100%;
 }
 .open li a {
 	display: block;
+}
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+.hero picture {
+    width: 100%;
+    grid-row: 1 / 2;
+}
+.hero img {
+    width: 100%;
+    height: 100%; /* maintains the image's aspect ratio */
+    object-fit: cover;
+    margin: 0;
+}
+.herolabel {
+	position: absolute;
+	top: 40px;
+	left: 5px;
+	background: radial-gradient(#fff, #a6c7e8);
+	border: 3px solid white(32, 81, 124, 0.75);
+	padding: 10px;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: 4px;
+	font-weight: bolder;
+	font-size: 14px;
+	font-family: 'Belleza', sans-serif;
+    font-style: italic;
 }
