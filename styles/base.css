@@ -77,7 +77,7 @@ main a:visited {
 #information {
     margin-top: 1rem;
  }
- 
+
 iframe {
     width: 100%;
     margin-top: 1rem;
@@ -172,7 +172,7 @@ footer {
 	top: 40px;
 	left: 5px;
 	background: radial-gradient(#fff, #a6c7e8);
-	border: 3px solid white(32, 81, 124, 0.75);
+	border: 3px solid white;
 	padding: 10px;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
