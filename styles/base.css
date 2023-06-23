@@ -172,7 +172,7 @@ footer {
 	top: 40px;
 	left: 5px;
 	background: radial-gradient(#fff, #a6c7e8);
-	border: 3px solid white;
+	border: 1px solid gray;
 	padding: 10px;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
