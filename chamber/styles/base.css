@@ -122,9 +122,6 @@ nav a:link, nav a:visited {
   background-color: white;
 } */
 
-main {
-  background-size: 900px 250px;
-}
 section {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -252,7 +249,7 @@ article {
   grid-row: 1 / 2;
   background-color: white;
   padding: 20px;
-  justify-content: center;
+  /* justify-content: center; */
 }
 aside {
   /* grid-area: sidebar; */
