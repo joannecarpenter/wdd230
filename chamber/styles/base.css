@@ -8,13 +8,14 @@ html {
 }
 
 body {
-    /* max-width: 900px; */
-    margin: 0 auto;
-    background-color: white;
-    padding: 2em;
+  /* width: 100%;
+  max-width: 900px; */
+  margin: 0 auto;
+  background-color: white;
+  padding: 2em;
 }
 
-main img {
+.hero-image img {
     max-width: 100%;
 }
 
@@ -121,6 +122,9 @@ nav a:link, nav a:visited {
   background-color: white;
 } */
 
+main {
+  background-size: 900px 250px;
+}
 section {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -231,3 +235,37 @@ footer p {
 .open li a {
 	display: block;
 }
+
+/* Discover Page Code Additions */
+.wrapper {
+  display: grid;
+  /* grid-template-columns: 4fr; */
+  grid-template-rows: 3fr 1fr;
+  /* grid-gap: 1rem; */
+  /* grid-template-areas:
+    "content"
+    "sidebar"; */
+}
+
+article {
+  /* grid-area: content; */
+  grid-row: 1 / 2;
+  background-color: white;
+  padding: 20px;
+  align-content: center;
+}
+aside {
+  /* grid-area: sidebar; */
+  grid-row: 2 / 3;
+  background-color: #64B6AC;
+  padding: 10px;
+}
+aside div {
+  background-color: #FEE9E1;
+  padding: 10px;
+  border: 2px solid white;
+}
+aside hr {
+  background-color: white;
+}
+
