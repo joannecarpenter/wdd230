@@ -1,7 +1,7 @@
 body {
   font-family: 'Diphylleia', serif;
   font-family: 'Quicksand', sans-serif;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-color: white;
   padding: 2em;
   /* max-width: 100vw; */
@@ -9,11 +9,11 @@ body {
   max-width: 900px; */
 }
 
-html {
+/* html {
   margin: 0 auto;
-  /* max-width: 100vw;
-  max-height: auto; */
-}
+  max-width: 100vw;
+  max-height: auto;
+} */
 
 .hero-image img {
     max-width: 100%;
@@ -252,7 +252,7 @@ article {
   grid-row: 1 / 2;
   background-color: white;
   padding: 20px;
-  align-content: center;
+  justify-content: center;
 }
 aside {
   /* grid-area: sidebar; */
@@ -268,4 +268,6 @@ aside div {
 aside hr {
   background-color: white;
 }
-
+article h2 {
+  padding-bottom: 20px;
+}
