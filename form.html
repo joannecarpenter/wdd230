@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joanne Carpenter - WDD 230 - Web Frontend Development - Form</title>
+    <link rel="icon" href="favicon-joanne.ico">
+    <meta name="description" content="Joanne Carpenter - WDD 230 - Web Frontend Development - Form">
+    <meta name="author" content="Joanne Carpenter">
+    
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joannecarpenter.github.io/wdd230/">
+    <meta property="og:title" content="Joanne Carpenter - WDD 230 - Web Frontend Development">
+    <meta property="og:image" content="https://github.com/joannecarpenter/wdd230/images/currituck-location-photo.jpg">
+    <meta property="og:image:alt" content="A yellow house on the water in Currituck, North Carolina">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"> 
+    <meta property="og:description" content="Joanne Carpenter - WDD 230 - Web Frontend Development - course assignment portal"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <picture>
+                <source srcset="images/joanne-image-small.webp" media="(max-width: 500px)">
+                <!-- <source srcset="images/joanne-image-medium.webp" media="(max-width: 150px)">
+                <img src="images/joanne-image-large.webp" alt="Picture of Joanne" width="375" height="500"> -->
+                <img src="images/joanne-image-medium.webp" alt="Picture of Joanne" width="150" height="200">
+            </picture>
+        </div>
+        <h1>Joanne Carpenter</h1>
+        <div id="mode" aria-label="Dark Mode">☑️</div>
+    </header>
+    <nav>
+        <button id="menu" aria-label="Menu"></button>
+        <ul class="navigation">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <div id="message"></div>
+            <p class="smaller">*Indicates a required field</p>
+            <fieldset>
+                <legend>Account Information</legend>
+                <label class="info">Username* <input type="text" id="username" name="username" required></label>
+                <label class="info">Password* <input type="password" id="password" name="new-password" required pattern="[a-zA-Z0-9]{8,}" placeholder="At least 8 characters long."></label>
+                <label class="info">Confirm Password* <input type="password" id="password-confirm" name="new-password" required placeholder="Re-enter password"></label>
+                <label class="info">Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu{2,}$" title="Please use your school email address." placeholder="someone@byui.edu"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Assessment</legend>   
+                <label class="rating">Page Rating <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues"></label>
+                <div id="rangevalue">1</div> 
+                <datalist id="rangevalues">
+                    <option value="1">1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+
+            <input type="submit" value="Create My Account" class="submitBtn">
+        </form>
+      
+
+    
+    </main>
+        <footer>
+        <p>&copy;<span id="year"></span> &bull; Joanne Carpenter &bull; North Carolina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/visitsCount.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
