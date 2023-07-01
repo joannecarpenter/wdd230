@@ -32,12 +32,22 @@ form label.rating {
     text-align: left;
 }
 
-form label input {
+input {
     display: block;
     height: 44px;
     width: 93%;
     padding: 0.5rem;
     border: 1px solid var(--border);
+}
+
+form.submitted input:valid {
+    border: 1px solid var(--border-valid);
+    background-color: lightgreen;
+}
+  
+form.submitted input:invalid {
+    border: 1px solid var(--border-invalid);
+    background-color: pink;
 }
 
 /* form label input:focus {
@@ -63,13 +73,5 @@ form input.submitBtn {
     display: block;
 }
 
-input:valid {
-    border: 1px solid var(--border-valid);
-    background-color: lightgreen;
-}
-  
-input:invalid {
-    border: 1px solid var(--border-invalid);
-    background-color: pink;
-}
+
 
