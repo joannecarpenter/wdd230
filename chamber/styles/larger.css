@@ -51,4 +51,10 @@
     .hover:hover {
         box-shadow: 0 0 50px #333;
     }   
+
+    /* Join Page */
+    fieldset.mem-info {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
 }

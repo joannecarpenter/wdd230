@@ -36,7 +36,7 @@
     <nav>
         <button id="menu" aria-label="Menu"></button>
         <ul class="navigation">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
@@ -44,29 +44,34 @@
     </nav>
 
     <main>
-        <form method="get" action="thankyou.html">
-            <h2>Join The Chamber</h2>
-            <fieldset>
+        
+        <form method="get" action="thankyou.html" id="form">
+            <h2 id="join">Join The Chamber</h2>
+            <div id="error"></div>
+            <p class="smaller">*Indicates a required field</p>
+            <fieldset class="app-info">
                 <legend>Applicant Information</legend>
 
-                <label class="applicant">First Name* <input type="text" name="fname" id="fname" required></label>
-                <label class="applicant">Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label class="applicant">Title/Position <input type="text" name="title" id="title" pattern="[] {7,}"></label>
-                <label class="applicant">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
-                <label class="applicant">Mobile Phone <input type="tel" name="tel" id="tel" placeholder="1234567899" required></label>
+                <label class="applicant">First Name* <input type="text" name="fname" id="fname" required autocomplete="given-name"></label>
+                <label class="applicant">Last Name* <input type="text" name="lname" id="lname" required autocomplete="family-name"></label>
+                <label class="applicant">Title/Position <input type="text" name="title" id="title"></label>
+                <label class="applicant">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required autocomplete="email"></label>
+                <label class="applicant">Mobile Phone* <input type="tel" name="tel" id="tel" placeholder="1234567899" required autocomplete="tel"></label>
             </fieldset>
-
-            <fieldset>
+            <hr>
+            <fieldset class="mem-info">
 
                 <legend>Membership</legend>
-
-                <div><h2>Membership Levels</h2></div>
-                <label class="membership"><input type="radio" name="Membership" value="np">NP Membership</label>
+                <section class="mem-box">
+                <div id="levels"><h2>Membership Levels</h2></div>
+                <label class="membership"><input type="radio" name="Membership" value="np"> NP Membership</label>
                 <label class="membership"><input type="radio" name="Membership" value="bronze"> Bronze Membership</label>
                 <label class="membership"><input type="radio" name="Membership" value="silver"> Silver Membership</label>
                 <label class="membership"><input type="radio" name="Membership" value="gold"> Gold Membership</label>
-            
-                <div><h2>Benefits</h2></div>
+                </section>
+
+                <section class="mem-box">
+                <div id="benefits"><h2>Benefits</h2></div>
                 <h3>NP Membership</h3>
                 <p> The NP Membership is for non-profit organizations. There is no fee associated with this level of membership.</p>
                 <h3>Bronze Membership</h3>
@@ -75,24 +80,21 @@
                 <p>The Silver Membership includes all of the benefits of the Bronze Membership, plus ...</p>
                 <h3>Gold Membership</h3>
                 <p>The Gold Membership is our highest level of membership. It includes all of the benefits of the Silver Membership, plus ...</p>
+                </section>
 
             </fieldset>
-
-            <fieldset>
+            <hr>
+            <fieldset class="bus-info">
                 <legend>Business Information</legend>
-                <label class="business">Description: </label>
-                <textarea name="description" id="description"></textarea>    
+                <label class="business">Description: </label>   
+                <label class="business"><textarea name="description" id="description"></textarea></label> 
             </fieldset>
 
-            <fieldset>
-                <label class="time"><input type="hidden" name="timestamp" id="time" step="1"></label>
+            <fieldset class="tstamp">
+                <label class="time"><p type="hidden" name="timestamp" id="time" value=""></label>
             </fieldset>
 
-            <input type="submit" value="Join The Chamber" class="submitBtn">
-
-
-
-
+            <input id="submitBtn" type="submit" value="Join The Chamber" class="submitBtn">
     </main>
     <footer>
         <div class="contact">
@@ -118,6 +120,7 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/buttons.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 
 </html>
