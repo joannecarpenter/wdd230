@@ -270,7 +270,7 @@ article h2 {
   padding-bottom: 20px;
 }
 
-/* Join Page */
+/* ---------- Join Page ---------- */
 form {
   margin: 2rem;
 }
@@ -278,9 +278,7 @@ form {
   text-align: center;
 }
 form fieldset.app-info, form fieldset.mem-info, form fieldset.bus-info {
-  /* border: 1px solid #B09E99; */
   background-color: #FEE9E1;
-  /* border-radius: 10px; */
   padding: 1rem;
   margin: 1rem;
 }
@@ -290,16 +288,14 @@ form fieldset.tstamp {
 form legend {
   background-color: #0e5b5d;
   color: white;
-  margin: 1 rem;
+  margin: 1rem;
   padding: .5rem;
 }
 form label.applicant {
   display: block;
   padding-top: 1rem;
-  /* color: #9c2c13;
-  font-size: .8rem; */
 }
-form label.applicant input {
+form label.applicant input, form label.business input {
   display: block;
   font-size: 1rem;
   width: 100%;
@@ -310,7 +306,8 @@ form label.applicant input {
 form label.membership {
   display: block;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 800;
 }
 form h2 {
   font-weight: bolder;
@@ -336,6 +333,17 @@ form label.business {
   font-size: 1.5rem;
   font-weight: 900;
   margin: 1rem;
-  width: 95%;
-  /* box-shadow: 2px 2px 10px 10px darkgray; */
+  width: 20rem;
+  height: 44px;
+}
+.submission {
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+.received {
+  background-color: #64b6ac;
+  opacity: 0.8;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }

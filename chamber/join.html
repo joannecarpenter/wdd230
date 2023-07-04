@@ -43,8 +43,7 @@
         </ul>
     </nav>
 
-    <main>
-        
+    <main>   
         <form method="get" action="thankyou.html" id="form">
             <h2 id="join">Join The Chamber</h2>
             <div id="error"></div>
@@ -73,28 +72,32 @@
                 <section class="mem-box">
                 <div id="benefits"><h2>Benefits</h2></div>
                 <h3>NP Membership</h3>
-                <p> The NP Membership is for non-profit organizations. There is no fee associated with this level of membership.</p>
+                <p> The NP Membership is for non-profit organizations. There is no fee associated with this level of membership. It includes all of the benefits of our Bronze Membership.</p>
                 <h3>Bronze Membership</h3>
-                <p>The Bronze Membership is our most basic level of membership. It includes ...</p>
+                <p>The Bronze Membership is our most basic level of membership with an annual fee of just $300. It includes access to our weekly digital newsletter, access to our current membership directory, and a business advertisement spot in our visitor's guide.</p>
                 <h3>Silver Membership</h3>
-                <p>The Silver Membership includes all of the benefits of the Bronze Membership, plus ...</p>
+                <p>The Silver Membership is one step above the basic membership with an annual fee of $350. It includes all of the benefits of the Bronze Membership, plus a quarterly business spotlight on our website and a reserved space at all chamber-hosted events.</p>
                 <h3>Gold Membership</h3>
-                <p>The Gold Membership is our highest level of membership. It includes all of the benefits of the Silver Membership, plus ...</p>
+                <p>The Gold Membership is our highest level of membership with an annual fee of $400. It includes all of the benefits of the Silver Membership, plus an all-access pass to all chamber-hosted events, priority registration for community events, and a seat on the chamber outreach panel.</p>
                 </section>
 
             </fieldset>
             <hr>
             <fieldset class="bus-info">
                 <legend>Business Information</legend>
+                <label class="business">Business/Organization Name* <input type="text" name="bus-name" id="bus-name" required></label>
                 <label class="business">Description: </label>   
                 <label class="business"><textarea name="description" id="description"></textarea></label> 
             </fieldset>
 
             <fieldset class="tstamp">
-                <label class="time"><p type="hidden" name="timestamp" id="time" value=""></label>
+                <label class="time"></label>
+                <input type="hidden" name="timestamp" id="time" value="">
             </fieldset>
 
-            <input id="submitBtn" type="submit" value="Join The Chamber" class="submitBtn">
+            <!-- <input id="submitBtn" type="submit" value="Join The Chamber" class="submitBtn"> -->
+            <button id="submitBtn" type="submit" class="submitBtn">Join The Chamber</button>
+        </form>
     </main>
     <footer>
         <div class="contact">
