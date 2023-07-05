@@ -1,0 +1,32 @@
+{
+    "familyName" : "Carpenter",
+    "moveIn" : "01/01/2015",
+    "familySize" : 4,
+    "visited" : true,
+    "familyMembers" : [
+        {
+            "name" : "Greg",
+            "gender" : "male",
+            "birthDate" : "02/02/1990"
+        },
+
+        {
+            "name" : "Cindy",
+            "gender" : "female",
+            "birthDate" : "03/03/1992"
+        },
+
+        {
+            "name" : "Scarlett",
+            "gender" : "female",
+            "birthDate" : "04/04/2013"
+        },
+        
+        {
+            "name" : "Samuel",
+            "gender" : "male",
+            "birthDate" : "05/05/2014"
+        }
+    ]
+}
+
