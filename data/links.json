@@ -1,0 +1,119 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",  
+                    "title": "Page Layout"
+                },
+
+                {
+                    "url": "week01/media-query.html",  
+                    "title": "Media Query"
+                },
+
+                {
+                    "url": "https://codepen.io/joannecarpenter/pen/ExOYeRv",  
+                    "title": "JS Pen"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",  
+                    "title": "Design"
+                },
+    
+                {
+                    "url": "https://codepen.io/joannecarpenter/pen/PoxPyEy",  
+                    "title": "Menu Pen"
+                },
+    
+                {
+                    "url": "week02/bom.html",  
+                    "title": "BOM"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape-optimized.webp",  
+                    "title": "WebP"
+                },
+    
+                {
+                    "url": "week03/lazyload.html",  
+                    "title": "Lazy Load"
+                },
+    
+                {
+                    "url": "week03/responsive-images.html",  
+                    "title": "Responsive Images"
+                },
+
+                {
+                    "url": "week03/bom2.html",  
+                    "title": "Web Storage API"
+                }
+            ]
+            },
+
+            {
+                "week": "Week 4",
+                "links": [
+                    {
+                        "url": "https://codepen.io/joannecarpenter/pen/MWzpaOP",  
+                        "title": "Pseudo-classes Pen"
+                    },
+        
+                    {
+                        "url": "images/CombinatorsExercisesW3Schools.png",  
+                        "title": "Combinators"
+                    },
+        
+                    {
+                        "url": "week04/tablebuild.html",  
+                        "title": "Tables"
+                    },
+
+                    {
+                        "url": "week04/form-start/index.html",  
+                        "title": "Forms"
+                    }
+                ]
+            },
+
+            {
+                "week": "Week 5",
+                "links": [
+                    {
+                        "url": "https://codepen.io/joannecarpenter/pen/KKrvXpb",  
+                        "title": "Pseudo-element Pen"
+                    },
+        
+                    {
+                        "url": "week05/new-ward-members.json",  
+                        "title": "Members JSON"
+                    },
+        
+                    {
+                        "url": "week05/prophets.html",  
+                        "title": "Fetch API"
+                    },
+
+                    {
+                        "url": "week05/weather.html",  
+                        "title": "Weather API"
+                    }
+                ]
+                }
+
+    ]
+}
