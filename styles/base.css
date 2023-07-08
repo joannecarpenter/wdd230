@@ -74,6 +74,21 @@ main a:visited {
     border-radius: 8px;
     overflow: hidden;
 }
+
+.activity-list {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.activity-list li {
+    padding-bottom: 1rem;
+}
+
+.activity-list li a:not(:first-child)::before {
+    content: " | "; /*Adding a pipe to separate <a> tags */
+}
+
 #information {
     margin-top: 1rem;
  }
