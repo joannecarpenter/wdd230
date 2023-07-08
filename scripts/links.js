@@ -9,7 +9,7 @@ async function getLinks(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            console.table(data.weeks);
+            // console.table(data.weeks);  <--DEBUG
             displayLinks(data.weeks);
         } else {
             throw Error(await response.text());
@@ -49,9 +49,6 @@ const displayLinks = (weeks) => {
             listItem.appendChild(anchor);
             // Append the <li> to the <ul>
             list.appendChild(listItem);
-
-        
-
             // Increment i
             i++;
         } while (i < loopTime);
