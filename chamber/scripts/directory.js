@@ -46,7 +46,7 @@ const displayMembers = (members) => {
         row.appendChild(url);
 
         let industryInfo = document.createElement('td');
-        industryInfo.textContent = member.icon + ` ${member.industry}`;
+        industryInfo.innerHTML = member.icon + ` ${member.industry}`;
         row.appendChild(industryInfo);
 
         // Append tr to the table
