@@ -135,8 +135,8 @@ footer {
 }
 
 p {
-    font-family: 'Quicksand', sans-serif;
-    color: black;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
 }
 
 footer p {
@@ -353,8 +353,27 @@ margin-bottom: 2rem;
   margin-bottom: 2rem;
 }
 /* ---------- Directory Page ---------- */
-.businesses {
+.business {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  background-color:#FEE9E1;
+  margin: 0.5rem;
+  width: 250px;
+  height: auto;
+}
+.business:nth-child(even) {
+	background-color: #64b6ac;
+}
+.view, #directory {
+  margin-left: 2.5rem;
+}
+
+.businesses, .grid {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 } 
 .list {
 	display: block;
@@ -362,7 +381,14 @@ margin-bottom: 2rem;
 .list li {
   	display: inline;
     }
-.grid {
-  	display: flex;
-    flex-wrap: wrap;
-  }
+
+.name {
+  font-size: 20px;
+  /* background-color: white; */
+  padding: 0.5rem;
+  font-family: 'Diphylleia', serif;
+}
+
+.view, #directory {
+  margin-left: 2.5rem;
+}

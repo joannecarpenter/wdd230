@@ -25,6 +25,7 @@ const displayMembers = (members) => {
     members.forEach((member) => {
         // Create div container for appending each businesses <ul>
         let card = document.createElement('div');
+        card.setAttribute('class', 'business');
         // Create ul for appending each business's li item details
         let details = document.createElement('ul');
 
@@ -32,6 +33,7 @@ const displayMembers = (members) => {
         // Insert appropriate json file data to each li
         // Append each <li> to the <ul>
         let name = document.createElement('li');
+        name.setAttribute('class', 'name');
         name.textContent = member.name;
         details.appendChild(name);
 
@@ -56,8 +58,9 @@ const displayMembers = (members) => {
         details.appendChild(url);
 
         let industryInfo = document.createElement('li');
-        industryInfo.innerHTML = member.icon + ` ${member.industry}`;
+        industryInfo.innerHTML = `${member.icon}  ${member.industry}`;
         details.appendChild(industryInfo);
+
 
         // Append ul (business details) to the div (card)
         card.appendChild(details);
