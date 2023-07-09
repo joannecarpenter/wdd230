@@ -36,11 +36,11 @@ const displayMembers = (members) => {
         details.appendChild(name);
 
         let streetAddress = document.createElement('li');
-        streetAddress.textContent = member.street-address;
+        streetAddress.textContent = member.streetAddress;
         details.appendChild(streetAddress);
 
         let cityStateZip = document.createElement('li');
-        cityStateZip.textContent = member.city-state-zip;
+        cityStateZip.textContent = member.cityStateZip;
         details.appendChild(cityStateZip);
 
         let phone = document.createElement('li');
@@ -68,16 +68,16 @@ const displayMembers = (members) => {
 
 
 /* Toggle Menu Buttons for Directory Page */
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
 //const section = document.querySelector("section");
 
-gridbutton.addEventListener("click", () => {
+gridButton.addEventListener("click", () => {
 	cards.classList.add("grid");
 	cards.classList.remove("list");
 });
 
-listbutton.addEventListener("click", () => {
+listButton.addEventListener("click", () => {
     cards.classList.add("list");
 	cards.classList.remove("grid");
 });

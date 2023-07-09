@@ -2,90 +2,90 @@
     "members": [
         {
             "name": "Sun Realty Corolla",
-            "street-address": "1135 Ocean Trl",
-            "city-state-zip": "Corolla, NC 27927",
+            "streetAddress": "1135 Ocean Trl",
+            "cityStateZip": "Corolla, NC 27927",
             "phone": "(252) 453-8822",
             "url": "https://www.sunrealtync.com/",
             "icon": "&#127968;",
             "industry": "Lodging",
-            "mem-level": "Gold"
+            "memLevel": "Gold"
         },
 
         {
             "name": "University Park Luxury Townhome Rentals",
-            "street-address": "108 Amherst Dr",
-            "city-state-zip":"Powells Point, NC 27966",
+            "streetAddress": "108 Amherst Dr",
+            "cityStateZip":"Powells Point, NC 27966",
             "phone": "(252) 562-2485",
             "url": "http://www.universityparkobx.com/",
             "icon": "&#127968;",
             "industry": "Lodging",
-            "mem-level": "Silver"
+            "memLevel": "Silver"
         },
 
         {
             "name": "Outer Banks West / Currituck Sound KOA Holiday",
-            "street-address": "1631 Waterlily Rd",
-            "city-state-zip":"Coinjock, NC 27923",
+            "streetAddress": "1631 Waterlily Rd",
+            "cityStateZip":"Coinjock, NC 27923",
             "phone": "(252) 453-2732",
             "url": "https://koa.com/campgrounds/outer-banks-west/?utm_source=COCwebsite&utm_medium=referral&utm_campaign=CurrituckCOC&utm_id=OBXKOA",
             "icon": "&#9978;",
             "industry": "Camping",
-            "mem-level": "Bronze"
+            "memLevel": "Bronze"
         },
 
         {
             "name": "Sandy Point Resort",
-            "street-address": "176 Sandy Point Dr",
-            "city-state-zip":"Knotts Island, NC 27950",
+            "streetAddress": "176 Sandy Point Dr",
+            "cityStateZip":"Knotts Island, NC 27950",
             "phone": "(252) 429-3094",
             "url": "http://sandypointresortcampground.com/",
             "icon": "&#9978;",
             "industry": "Camping",
-            "mem-level": "Bronze"
+            "memLevel": "Bronze"
         },
 
         {
             "name": "Currituck BBQ Company",
-            "street-address": "4467 Caratoke Hwy",
-            "city-state-zip":"Barco, NC 27917",
+            "streetAddress": "4467 Caratoke Hwy",
+            "cityStateZip":"Barco, NC 27917",
             "phone": "(252) 453-6618",
             "url": "http://www.currituckbbq.com/",
             "icon": "&#127869;",
             "industry": "Dining",
-            "mem-level": "Silver"
+            "memLevel": "Silver"
         },
 
         {
             "name": "Duck Donuts",
-            "street-address": "603 Currituck Clubhouse Dr, Unit D",
-            "city-state-zip":"Corolla, NC 27927",
+            "streetAddress": "603 Currituck Clubhouse Dr, Unit D",
+            "cityStateZip":"Corolla, NC 27927",
             "phone": "(252) 453-3210",
             "url": "http://duckdonuts.com/",
             "icon": "&#127869;",
             "industry": "Dining",
-            "mem-level": "Gold"
+            "memLevel": "Gold"
         },
 
         {
             "name": "The Cotton Gin",
-            "street-address": "6957 Caratoke Hwy",
-            "city-state-zip":"Jarvisburg, NC 27947",
+            "streetAddress": "6957 Caratoke Hwy",
+            "cityStateZip":"Jarvisburg, NC 27947",
             "phone": "(252) 491-2387",
             "url": "http://www.cottongin.com/",
             "icon": "&#127971;",
             "industry": "Shopping",
-            "mem-level": "Bronze"
+            "memLevel": "Bronze"
         },
 
         {
             "name": "Nags Head Hammocks",
-            "street-address": "799 Sunset Blvd",
-            "city-state-zip":"Corolla, NC 27927",
+            "streetAddress": "799 Sunset Blvd",
+            "cityStateZip":"Corolla, NC 27927",
             "phone": "(252) 453-4611",
             "url": "http://www.nagshead.com/",
             "icon": "&#127971;",
             "industry": "Shopping",
-            "mem-level": "Gold"
+            "memLevel": "Gold"
         }
 
     ]
