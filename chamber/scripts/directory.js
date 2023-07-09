@@ -9,7 +9,7 @@ async function getMembers(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
+            //console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
             displayMembers(data.members);
         } else {
             throw Error(await response.text());
