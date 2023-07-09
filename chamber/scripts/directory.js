@@ -1,15 +1,15 @@
 const baseURL = "https://joannecarpenter.github.io/wdd230/";
 const membersURL = "https://joannecarpenter.github.io/wdd230/chamber/data/members.json";
 
-// Link to table in html
-const businesses = document.querySelector('#businesses');
+// Link to section in html for appending all business cards
+const cards = document.querySelector('#businesses');
 
 async function getMembers(url) {
     try {   
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            //console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
+            console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
             displayMembers(data.members);
         } else {
             throw Error(await response.text());
@@ -23,66 +23,64 @@ getMembers(membersURL);
 
 const displayMembers = (members) => {
     members.forEach((member) => {
-        // Create table row for appending all table data items
-        let row = document.createElement('tr');
+        // Create div container for appending each businesses <ul>
+        let card = document.createElement('div');
+        card.setAttribute('class', 'business');
+        // Create ul for appending each business's li item details
+        let details = document.createElement('ul');
 
-        // Create new table data box for each piece of info
-        // Insert appropriate json file data to each table box
-        // Append each <td> to the <tr>
-        let name = document.createElement('td');
-        //name.setAttribute('class', 'tableData');
+        // Create new li for each piece of info
+        // Insert appropriate json file data to each li
+        // Append each <li> to the <ul>
+        let name = document.createElement('li');
+        name.setAttribute('class', 'name');
         name.textContent = member.name;
-        row.appendChild(name);
+        details.appendChild(name);
 
-        let address = document.createElement('td');
-        //address.setAttribute('class', 'tableData');
-        address.textContent = member.address;
-        row.appendChild(address);
+        let streetAddress = document.createElement('li');
+        streetAddress.textContent = member.streetAddress;
+        details.appendChild(streetAddress);
 
-        let phone = document.createElement('td');
-        //phone.setAttribute('class', 'tableData');
+        let cityStateZip = document.createElement('li');
+        cityStateZip.textContent = member.cityStateZip;
+        details.appendChild(cityStateZip);
+
+        let phone = document.createElement('li');
         phone.textContent = member.phone;
-        row.appendChild(phone);
+        details.appendChild(phone);
 
-        let url = document.createElement('td');
-        //url.setAttribute('class', 'tableData');
+        let url = document.createElement('li');
         let anchor = document.createElement('a');
         let link = member.url;
         anchor.setAttribute('href', link);
         anchor.textContent = 'Website';
         url.appendChild(anchor);
-        row.appendChild(url);
+        details.appendChild(url);
 
-        let industryInfo = document.createElement('td');
-        //industryInfo.setAttribute('class', 'tableData');
-        industryInfo.innerHTML = member.icon + ` ${member.industry}`;
-        row.appendChild(industryInfo);
+        let industryInfo = document.createElement('li');
+        industryInfo.innerHTML = `${member.icon}  ${member.industry}`;
+        details.appendChild(industryInfo);
 
-        // Append tr to the table
-        businesses.appendChild(row);
-   
+
+        // Append ul (business details) to the div (card)
+        card.appendChild(details);
+        // Append the div (card) to the section (cards)
+        cards.appendChild(card);
     });
 }
 
-/* CANNOT GET ANY OF THIS TO WORK 
-NEXT THOUGHT IS to add a class attribute to each <td> called list, 
-add css styles for .list and .grid,
-then create a function that sets the appropriate class attribute (like add remove)
-when the button is clicked*/
 
 /* Toggle Menu Buttons for Directory Page */
-const gridButton = document.querySelector('#grid');
-const listButton = document.querySelector('#list');
-const tableData = document.querySelector('td');
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+//const section = document.querySelector("section");
 
+gridButton.addEventListener("click", () => {
+	cards.classList.add("grid");
+	cards.classList.remove("list");
+});
 
-
-gridButton.addEventListener('click', () => {
-	tableData.classList.add('grid');
-    tableData.classList.remove('list');	
-})
-
-listButton.addEventListener('click', () => {
-	tableData.classList.add('list');
-    tableData.classList.remove('grid');	
-})
+listButton.addEventListener("click", () => {
+    cards.classList.add("list");
+	cards.classList.remove("grid");
+});
