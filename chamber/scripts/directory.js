@@ -9,7 +9,7 @@ async function getMembers(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
+            //console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
             displayMembers(data.members);
         } else {
             throw Error(await response.text());
@@ -30,22 +30,31 @@ const displayMembers = (members) => {
         // Insert appropriate json file data to each table box
         // Append each <td> to the <tr>
         let name = document.createElement('td');
+        //name.setAttribute('class', 'tableData');
         name.textContent = member.name;
         row.appendChild(name);
 
         let address = document.createElement('td');
+        //address.setAttribute('class', 'tableData');
         address.textContent = member.address;
         row.appendChild(address);
 
         let phone = document.createElement('td');
+        //phone.setAttribute('class', 'tableData');
         phone.textContent = member.phone;
         row.appendChild(phone);
 
         let url = document.createElement('td');
-        url.textContent = member.url;
+        //url.setAttribute('class', 'tableData');
+        let anchor = document.createElement('a');
+        let link = member.url;
+        anchor.setAttribute('href', link);
+        anchor.textContent = 'Website';
+        url.appendChild(anchor);
         row.appendChild(url);
 
         let industryInfo = document.createElement('td');
+        //industryInfo.setAttribute('class', 'tableData');
         industryInfo.innerHTML = member.icon + ` ${member.industry}`;
         row.appendChild(industryInfo);
 
@@ -54,3 +63,26 @@ const displayMembers = (members) => {
    
     });
 }
+
+/* CANNOT GET ANY OF THIS TO WORK 
+NEXT THOUGHT IS to add a class attribute to each <td> called list, 
+add css styles for .list and .grid,
+then create a function that sets the appropriate class attribute (like add remove)
+when the button is clicked*/
+
+/* Toggle Menu Buttons for Directory Page */
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+const tableData = document.querySelector('td');
+
+
+
+gridButton.addEventListener('click', () => {
+	tableData.classList.add('grid');
+    tableData.classList.remove('list');	
+})
+
+listButton.addEventListener('click', () => {
+	tableData.classList.add('list');
+    tableData.classList.remove('grid');	
+})

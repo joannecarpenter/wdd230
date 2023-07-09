@@ -2,7 +2,8 @@
     "members": [
         {
             "name": "Sun Realty Corolla",
-            "address": "1135 Ocean Trl, Corolla, NC 27927",
+            "street-address": "1135 Ocean Trl",
+            "city-state-zip": "Corolla, NC 27927",
             "phone": "(252) 453-8822",
             "url": "https://www.sunrealtync.com/",
             "icon": "&#127968;",
@@ -12,7 +13,8 @@
 
         {
             "name": "University Park Luxury Townhome Rentals",
-            "address": "108 Amherst Dr, Powells Point, NC 27966",
+            "street-address": "108 Amherst Dr",
+            "city-state-zip":"Powells Point, NC 27966",
             "phone": "(252) 562-2485",
             "url": "http://www.universityparkobx.com/",
             "icon": "&#127968;",
@@ -22,7 +24,8 @@
 
         {
             "name": "Outer Banks West / Currituck Sound KOA Holiday",
-            "address": "1631 Waterlily Rd, Coinjock, NC 27923",
+            "street-address": "1631 Waterlily Rd",
+            "city-state-zip":"Coinjock, NC 27923",
             "phone": "(252) 453-2732",
             "url": "https://koa.com/campgrounds/outer-banks-west/?utm_source=COCwebsite&utm_medium=referral&utm_campaign=CurrituckCOC&utm_id=OBXKOA",
             "icon": "&#9978;",
@@ -32,7 +35,8 @@
 
         {
             "name": "Sandy Point Resort",
-            "address": "176 Sandy Point Dr, Knotts Island, NC 27950",
+            "street-address": "176 Sandy Point Dr",
+            "city-state-zip":"Knotts Island, NC 27950",
             "phone": "(252) 429-3094",
             "url": "http://sandypointresortcampground.com/",
             "icon": "&#9978;",
@@ -42,7 +46,8 @@
 
         {
             "name": "Currituck BBQ Company",
-            "address": "4467 Caratoke Hwy, Barco, NC 27917",
+            "street-address": "4467 Caratoke Hwy",
+            "city-state-zip":"Barco, NC 27917",
             "phone": "(252) 453-6618",
             "url": "http://www.currituckbbq.com/",
             "icon": "&#127869;",
@@ -52,7 +57,8 @@
 
         {
             "name": "Duck Donuts",
-            "address": "603 Currituck Clubhouse Dr, Unit D, Corolla, NC 27927",
+            "street-address": "603 Currituck Clubhouse Dr, Unit D",
+            "city-state-zip":"Corolla, NC 27927",
             "phone": "(252) 453-3210",
             "url": "http://duckdonuts.com/",
             "icon": "&#127869;",
@@ -62,7 +68,8 @@
 
         {
             "name": "The Cotton Gin",
-            "address": "6957 Caratoke Hwy, Jarvisburg, NC 27947",
+            "street-address": "6957 Caratoke Hwy",
+            "city-state-zip":"Jarvisburg, NC 27947",
             "phone": "(252) 491-2387",
             "url": "http://www.cottongin.com/",
             "icon": "&#127971;",
@@ -72,7 +79,8 @@
 
         {
             "name": "Nags Head Hammocks",
-            "address": "799 Sunset Blvd, Timbuck II Shopping Village, Corolla, NC 27927",
+            "street-address": "799 Sunset Blvd",
+            "city-state-zip":"Corolla, NC 27927",
             "phone": "(252) 453-4611",
             "url": "http://www.nagshead.com/",
             "icon": "&#127971;",

@@ -352,3 +352,20 @@ margin-bottom: 2rem;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+/* ---------- Directory Page ---------- */
+.businesses {
+  display: flex;
+} 
+.list {
+	display: block;
+  }
+.list li {
+  	display: inline;
+    }
+.grid {
+  	display: flex;
+    flex-wrap: wrap;
+  }
+/* ul {
+  	list-style: none;
+    } */
