@@ -365,6 +365,10 @@ margin-bottom: 2rem;
 .business:nth-child(even) {
 	background-color: #64b6ac;
 }
+.business a {
+  color: black;
+
+}
 .view, #directory {
   margin-left: 2.5rem;
 }
