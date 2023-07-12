@@ -66,9 +66,21 @@
 
             <section class="card">
                 <h2>Weather</h2>
-                <!-- weather card -->
-                <p>Current Weather Info will go here</p>
-                <p>Beach Alerts</p>
+                <div id="current">
+                    <h3>Current Conditions</h3>
+                    <p>The current temperature in Currituck, North Carolina is <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt=""  class="details">
+                        <figcaption class="details"></figcaption>
+                    </figure>
+                </div>
+                
+                <div id="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <p id="day-one"></p>
+                    <p id="day-two"></p>
+                    <p id="day-three"></p>
+                </div>
             </section>
         </div>
         
@@ -119,7 +131,7 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/buttons.js"></script>
-    <script src="scripts/visits.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
