@@ -18,6 +18,7 @@ async function getMembers(url) {
         if (response.ok){
             const data = await response.json();
             console.log(data);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
+            console.table(data.members);
             //displaySpotlights(data.members);
         } else {
             throw Error(await response.text());
