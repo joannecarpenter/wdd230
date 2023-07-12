@@ -28,6 +28,7 @@ async function getMembers(url) {
     }
 }
 
+getMembers(membersURL);
     
 const displaySpotlights = (members) => {
     // Create an array to store the possible spotlights
