@@ -18,11 +18,33 @@ async function getMembers(url) {
         if (response.ok){
             const data = await response.json();
             console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
-            //displayMembers(data.members);
+            displaySpotlights(data.members);
         } else {
             throw Error(await response.text());
         }
     }   catch (error) {
             console.log(error);
     }
+}
+
+    
+const displaySpotlights = (members) => {
+    // Create an array to store the possible spotlights
+    const spotlights = [];
+    members.forEach((member) => {
+        let name = member.name;
+        let membership = member.memLevel;
+        let info = `${member.icon}  ${member.industry}`;
+        let website = member.url;
+
+        // If membership is silver or gold, add them to the spotlights array
+        if (membership === 'Silver' || membership === 'Gold') {
+            let memberDetails = `${name}, ${info}, ${website}`;
+            spotlights.push(memberDetails);
+            console.log(spotlights);
+        }
+                     
+    })
+
+    // Randomly select 3 members from the spotlights array, and add them to the page
 }
