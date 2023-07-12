@@ -17,8 +17,8 @@ async function getMembers(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
-            displaySpotlights(data.members);
+            console.log(data);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
+            //displaySpotlights(data.members);
         } else {
             throw Error(await response.text());
         }
