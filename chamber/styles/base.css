@@ -151,7 +151,7 @@ footer p {
 
 .card {
   margin: 20px;
-  padding: 0 70px;
+  /* padding: 0 70px; */
   background-color: #FAD4C0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -398,3 +398,10 @@ margin-bottom: 2rem;
 }
 
 /* ---------- Weather Card ---------- */
+.card div{
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border: 2px solid #B09E99;
+}
