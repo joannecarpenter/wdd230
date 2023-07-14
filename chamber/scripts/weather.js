@@ -74,7 +74,7 @@ function displayForecast(data) {
     // Day Two
     let day2 = new Date();
     day2.setDate(today.getDate() + 2);
-    let day2Parts = tomorrow.toDateString().split(' ');
+    let day2Parts = day2.toDateString().split(' ');
     let day2Date = `${day2Parts[0]}, ${day2Parts[1]} ${day2Parts[2]}`;
     const day2Temp = Math.round(data.list[8]['main']['temp']);
     forecast2.textContent = `${day2Date}:  ${day2Temp} \u00B0F`;
@@ -82,7 +82,7 @@ function displayForecast(data) {
     // Day Three
     let day3 = new Date();
     day3.setDate(today.getDate() + 3);
-    let day3Parts = tomorrow.toDateString().split(' ');
+    let day3Parts = day3.toDateString().split(' ');
     let day3Date = `${day3Parts[0]}, ${day3Parts[1]} ${day3Parts[2]}`;
     const day3Temp = Math.round(data.list[16]['main']['temp']);
     forecast3.textContent = `${day3Date}:  ${day3Temp} \u00B0F`;

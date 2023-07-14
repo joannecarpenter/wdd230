@@ -2,7 +2,7 @@
 body {
   font-family: 'Diphylleia', serif;
   font-family: 'Quicksand', sans-serif;
-  /* margin: 0 auto; */
+  margin: 0;
   background-color: white;
   /* padding: 2em; */
   /* max-width: 100vw; */
@@ -10,11 +10,11 @@ body {
   max-width: 900px; */
 }
 
-/* html {
-  margin: 0 auto;
-  max-width: 100vw;
-  max-height: auto;
-} */
+ html {
+  margin: 0;
+  /*max-width: 100vw;
+  max-height: auto; */
+} 
 
 .hero-image img {
     max-width: 100%;
@@ -189,9 +189,11 @@ footer p {
 	padding: 3px 7px 6px;
 	background-color: #FEE9E1;
 	color: #000;
- 	position: absolute;
-  right: 30px;
-  top: 30px;
+ 	/* position: absolute; */
+  position: static;
+  display: flex;
+  /* right: 30px;
+  top: 30px; */
 }
 
 #menu::before {
@@ -398,10 +400,34 @@ margin-bottom: 2rem;
 }
 
 /* ---------- Weather Card ---------- */
-.card div{
+.card div {
   background-color: white;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   border: 2px solid #B09E99;
+}
+
+/* -------------- Banner ----------------*/
+.banner {
+  background-color: #64B6AC;
+}
+
+.banner-content {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+.banner-close {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
