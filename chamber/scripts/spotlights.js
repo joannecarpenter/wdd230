@@ -1,6 +1,8 @@
+// Select the spotlight div
 const spotlightContainer = document.querySelector('#spot-box');
 // Create an array to store the possible spotlights
 const spotlights = [];
+
 
 const baseURL = "https://joannecarpenter.github.io/wdd230/";
 const membersURL = "https://joannecarpenter.github.io/wdd230/chamber/data/members.json";
@@ -11,8 +13,7 @@ async function getMembers(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            //console.log(data);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
-            //console.table(data.members);
+
             filterMembers(data.members);
             displaySpotlights();
         } else {
@@ -22,6 +23,7 @@ async function getMembers(url) {
             console.log(error);
     }
 }
+
 getMembers(membersURL);
 
 // Filter members to silver and gold levels only, and add them to the spotlights array 
@@ -35,25 +37,20 @@ const filterMembers = (members) => {
         // If membership is silver or gold, add them to the spotlights array
         if (membership === 'Silver' || membership === 'Gold') {
             let memberDetails = `${name}, ${info}, ${website}`;
-            spotlights.push(memberDetails);
-            //console.log(spotlights);
+            spotlights.push(memberDetails); 
         }                    
     });
 }
 
-
-function GetRandomMember(){
-    let randomIndex = Math.floor(Math.random() * spotlights.length) + 1;
-    return spotlights[randomIndex];
-};
-
-// Randomly select 3 members from the spotlights array, and add them to the page
-function displaySpotlights(){
-    let count = 1;
-    do {
-        let randomMember = GetRandomMember();
-        //console.log(randomMember);
-
+// Add chosen spotlights to the page
+// FIX WHATEVER IS WRONG WITH THIS DISPLAY FUNCTION THAT MAKES THE DISPLAY WEIRD
+// FOR SOME REASON, SOMETIMES THESE SPOTLIGHTS START SHOWING AS UNDEFINED AND THE split() method errors out
+function displaySpotlights() {
+    for (let i = 0; i < 3; i++) {
+        // Randomly select a business from the possible spotlights array
+        let randomIndex = Math.floor(Math.random() * spotlights.length) + 1;
+        let randomMember = spotlights[randomIndex];
+ 
         // Split the member string into pieces to be placed in the document
         let memberParts = randomMember.split(', ');
         let name = memberParts[0];
@@ -78,11 +75,6 @@ function displaySpotlights(){
         profile.appendChild(companyWeb);
 
         // Add company profile to spotlight box
-        spotlightContainer.appendChild(profile);
-        
-        // Increment count to ensure this only gets repeated 3 times
-        count ++;
-
-    } while (count < 4);
-
+        spotlightContainer.appendChild(profile);        
+    };
 }
