@@ -28,7 +28,11 @@
 
 <body>
     <header>
-        <img src="images/rsz-logo-currituck.png" alt="Currituck County Logo">
+        <picture>
+            <source srcset="images/logo-currituck-small.webp" media="(max-width: 75px)">
+            <source srcset="images/logo-currituck-med.webp" media="(max-width: 150px)">
+            <img src="images/logo-currituck-large.webp" alt="Currituck County Logo" width="219" height="218">
+        </picture>
         <h1>Chamber of Commerce</h1>
         <h2>Currituck, North Carolina</h2>
     </header>
@@ -52,23 +56,10 @@
 
     <footer>
         <div class="contact">
-            <!-- contact information -->
-            <!-- <h4>Contact Us:</h4> -->
             <p>Currituck County Chamber of Commerce &bull; 100 Currituck Road, Currituck, North Carolina 27958 &bull; 252-555-5555</p>
-        <!-- </div>
-        <div class="social-media">
-        <p>Follow Us: </p> -->
-            <button>Facebook</button>
-            <button>Twitter</button>
-            <button>LinkedIn</button>
-        </div>
-        <br>
         <hr>
         <div class="site-info">
-            <!-- author's full name -->
-            <!-- project for WDD 230 -->
-            <!-- last modification date of the Page -->
-            <p>&copy;<span id="year"></span> &bull; Joanne Carpenter &bull; project for WDD 230 course</p>
+            <p>&copy;<span id="year"></span> &bull; Joanne Carpenter &bull; A project for college course WDD 230</p>
             <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>

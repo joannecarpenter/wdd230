@@ -25,6 +25,10 @@
         display: none; /* hide hamburger button */
     } 
 
+    .action-box {
+        top: 75px;
+        left: 25px;
+    }
     .info-card-box {
         flex-direction: row;
       }

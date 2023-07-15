@@ -39,7 +39,11 @@
         </div>
     </div>
     <header>
-        <img src="images/rsz-logo-currituck.png" alt="Currituck County Logo">
+        <picture>
+            <source srcset="images/logo-currituck-small.webp" media="(max-width: 75px)">
+            <source srcset="images/logo-currituck-med.webp" media="(max-width: 150px)">
+            <img src="images/logo-currituck-large.webp" alt="Currituck County Logo" width="219" height="218">
+        </picture>
         <h1>Chamber of Commerce</h1>
         <h2>Currituck, North Carolina</h2>
     </header>
@@ -56,12 +60,14 @@
 
     <main>
         <div class="hero-image">
-            <!-- OPTIMIZE THIS IMAGE WITH SOURCE SETS AND SET THE CONTAINER TO NOT SHOW PAST THE IMAGE -->
-            <!-- hero image -->
-            <img src="images/rsz-currituck-beach.jpg" width="1600" height="500"  alt="Sunrise over Currituck beach">
-         
+            <picture>
+                <source srcset="images/currituck-beach-small.webp" media="(max-width: 350px)">
+                <source srcset="images/currituck-beach-med.webp" media="(max-width: 500px)">
+                <source srcset="images/currituck-beach-lrg.webp" media="(max-width: 1000px)">
+                <img src="images/currituck-beach-lrg.webp" width="1000" height="576" loading="lazy" alt="Sunrise over Currituck beach">
+            </picture>
+
             <div class="action-box">
-                <!-- call to action -->
                 <h3>Promote Small Businesses</h3>
                 <h3>Influence Community Development</h3>
                 <h3>Serve Local Needs</h3>
@@ -108,9 +114,9 @@
         
         <section class="spotlight">
             <h2>Member Spotlights</h2>
-            <!-- 1-3 company spotlights advertisements -->
             <div id="spot-box" class="container">
-                <!-- <div class="profile">
+                <!-- *Anticipated Content Built in Javascript* 
+                <div class="profile">
                     <h3 id="name1">Company 1</h3>
                     <p id="info1">Company 1 Info</p>
                     <a id="web1" href="#">Website</a>  
@@ -131,23 +137,10 @@
 
     <footer>
         <div class="contact">
-            <!-- contact information -->
-            <!-- <h4>Contact Us:</h4> -->
             <p>Currituck County Chamber of Commerce &bull; 100 Currituck Road, Currituck, North Carolina 27958 &bull; 252-555-5555</p>
-        <!-- </div>
-        <div class="social-media">
-        <p>Follow Us: </p> -->
-            <button>Facebook</button>
-            <button>Twitter</button>
-            <button>LinkedIn</button>
-        </div>
-        <br>
         <hr>
         <div class="site-info">
-            <!-- author's full name -->
-            <!-- project for WDD 230 -->
-            <!-- last modification date of the Page -->
-            <p>&copy;<span id="year"></span> &bull; Joanne Carpenter &bull; project for WDD 230 course</p>
+            <p>&copy;<span id="year"></span> &bull; Joanne Carpenter &bull; A project for college course WDD 230</p>
             <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
