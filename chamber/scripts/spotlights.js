@@ -9,7 +9,6 @@ const randomIndexes = [];
 const baseURL = "https://joannecarpenter.github.io/wdd230/";
 const membersURL = "https://joannecarpenter.github.io/wdd230/chamber/data/members.json";
 
-
 async function getMembers(url) {
     try {   
         const response = await fetch(url);

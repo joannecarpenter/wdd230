@@ -1,6 +1,6 @@
 // Using localStorage to store the latest visit date by the client, 
 // display one of three possible messages about the time between page visits in the sidebar content area.
-localStorage.setItem('lastVisit', '2023-06-25')
+localStorage.setItem('lastVisit', '2023-06-25');
 
 // Initialize the display element
 const visitDisplay = document.querySelector('.visit-info');

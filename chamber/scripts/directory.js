@@ -9,7 +9,6 @@ async function getMembers(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            //console.table(data.members);  //DEBUG - REMOVE AFTER FUNCTIONALITY CONFIRMED
             displayMembers(data.members);
         } else {
             throw Error(await response.text());
@@ -73,7 +72,6 @@ const displayMembers = (members) => {
 /* Toggle Menu Buttons for Directory Page */
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
-//const section = document.querySelector("section");
 
 gridButton.addEventListener("click", () => {
 	cards.classList.add("grid");

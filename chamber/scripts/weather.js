@@ -24,7 +24,6 @@ async function getCurrentData(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            //console.log(data);  // debug/check for accuracy 
             displayWeather(data); 
         } else {
             throw Error(await response.text());
@@ -39,7 +38,6 @@ async function getForecastData(url) {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            //console.log(data);  // debug/check for accuracy 
             displayForecast(data); 
         } else {
             throw Error(await response.text());
@@ -90,7 +88,5 @@ function displayForecast(data) {
 
 getCurrentData(dailyUrl);
 getForecastData(fiveDayUrl);
-//displayWeather(currentData);
-//displayForecast(forecastData);
 
 // Currituck, NC latitude & longitude --> 36.44640531846864, -76.01701020821504
