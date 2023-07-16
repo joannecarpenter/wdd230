@@ -2,6 +2,8 @@
 const spotlightContainer = document.querySelector('#spot-box');
 // Create an array to store the possible spotlights
 const spotlights = [];
+// Create an array to store the random indexes used to choose random members from the spotlights array
+const randomIndexes = [];
 
 
 const baseURL = "https://joannecarpenter.github.io/wdd230/";
@@ -42,15 +44,19 @@ const filterMembers = (members) => {
     });
 }
 
-// Add chosen spotlights to the page
-// FIX WHATEVER IS WRONG WITH THIS DISPLAY FUNCTION THAT MAKES THE DISPLAY WEIRD
-// FOR SOME REASON, SOMETIMES THESE SPOTLIGHTS START SHOWING AS UNDEFINED AND THE split() method errors out
 function displaySpotlights() {
     for (let i = 0; i < 3; i++) {
-        // Randomly select a business from the possible spotlights array
-        let randomIndex = Math.floor(Math.random() * spotlights.length) + 1;
+        // Choose a random number based on the length of the spotlights array and use that as the member index
+        let randomIndex = Math.floor(Math.random() * spotlights.length);
+
+        // Eliminate repeats of the same index number choice
+        let exists = randomIndexes.includes(randomIndex)
+        if (exists) {
+            i--; 
+            continue; }
+        randomIndexes.push(randomIndex);
         let randomMember = spotlights[randomIndex];
- 
+        
         // Split the member string into pieces to be placed in the document
         let memberParts = randomMember.split(', ');
         let name = memberParts[0];
