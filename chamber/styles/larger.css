@@ -29,38 +29,42 @@
         top: 75px;
         left: 25px;
     }
+
     .info-card-box {
         flex-direction: row;
-      }
+    }
 
     .container {
         flex-direction: row;
     }
+
     .profile {
         width: 300px;
     }
-/* Discover Page Code Additions */
+
+/* ------ Discover Page Code Additions ------ */
     .wrapper {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
-        /* grid-template-areas: 
-          "sidebar content"; */
     }
+
     article {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         padding: 20px;
     }
+
     aside {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
-    /* hover effect */
+
+    /* ------ hover effect ------ */
     .hover:hover {
         box-shadow: 0 0 50px #333;
     }   
 
-    /* Join Page */
+    /* ------ Join Page ------ */
     fieldset.mem-info {
         display: grid;
         grid-template-columns: 1.5fr 2fr;
