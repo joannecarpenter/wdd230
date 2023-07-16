@@ -36,6 +36,9 @@
     .container {
         flex-direction: row;
     }
+    .profile {
+        width: 300px;
+    }
 /* Discover Page Code Additions */
     .wrapper {
         grid-template-rows: 1fr;
@@ -46,6 +49,7 @@
     article {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        padding: 20px;
     }
     aside {
         grid-column: 1 / 2;
@@ -60,5 +64,9 @@
     fieldset.mem-info {
         display: grid;
         grid-template-columns: 1.5fr 2fr;
+    }
+
+    .submitBtn {
+        width: 20rem;
     }
 }

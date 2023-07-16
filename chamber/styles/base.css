@@ -1,3 +1,11 @@
+:root {
+  --primary: #0E5B5D;
+  --secondary: #FEE9E1;
+  --accent1: #64B6AC;
+  --accent2: #FAD4C0;
+  --accent3: #B09E99;
+}
+
 
 body {
   font-family: 'Diphylleia', serif;
@@ -40,7 +48,7 @@ body {
 }
 
 .action-box button {
-  background-color: #64b6ac;
+  background-color: var(--accent1);
 }
 
 h2 {
@@ -52,7 +60,7 @@ header {
     padding: 2em;
     text-align: center;
     font-size: 20px;
-    background-color: #0e5b5d;
+    background-color: var(--primary);
     background-size: 900px 250px;
     font-family: 'Diphylleia', serif;
     color: white;
@@ -87,7 +95,7 @@ header h2 {
 }
 
 nav {
-    background-color: #FEE9E1;
+    background-color: var(--secondary);
     line-height: 1em;
     text-align: center;
     font-size: 1.5em;
@@ -106,7 +114,7 @@ ul {
 }
 
 .active {
-  background-color: #B09E99;
+  background-color: var(--accent3);
 } 
 
 nav a {
@@ -130,7 +138,7 @@ section {
 
 footer {
   padding: 2rem;
-  background-color: #0e5b5d;
+  background-color: var(--primary);
   text-align: center;
 }
 
@@ -157,7 +165,7 @@ footer p {
 }
 
 .spotlight {
-  background-color: #B09E99;
+  background-color: var(--accent3);
   padding: 2rem;
   margin: 10px;
 }
@@ -174,21 +182,24 @@ footer p {
   text-align: center;
   border: 3px solid grey;
   margin: 0.5rem;
+  width: 200px;
 }
 
-/* .contact {
-  color: white; */
-  /* background-color: white; */
-  /* padding: 20px; */
-  /* text-align: center; */
-/* } */
+.profile a, .profile a:visited {
+  color: var(--primary);
+  font-weight: bold;
+  padding: 0.5rem;
+}
 
+.profile a:hover {
+  background-color: var(--secondary);
+}
 /* small navigation menu */
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #FEE9E1;
+	background-color: var(--secondary);
 	color: #000;
  	/* position: absolute; */
   position: static;
@@ -238,31 +249,29 @@ footer p {
 }
 
 /* ------ Discover Page Code Additions ------ */
+
 .wrapper {
   display: grid;
   /* grid-template-columns: 4fr; */
   grid-template-rows: 3fr 1fr;
   /* grid-gap: 1rem; */
-  /* grid-template-areas:
-    "content"
-    "sidebar"; */
 }
 
 article {
-  /* grid-area: content; */
   grid-row: 1 / 2;
   background-color: white;
   padding: 20px;
   /* justify-content: center; */
+  max-width: 90%;
 }
+
 aside {
-  /* grid-area: sidebar; */
   grid-row: 2 / 3;
-  background-color: #64B6AC;
+  background-color: var(--accent1);
   padding: 10px;
 }
 aside div {
-  background-color: #FEE9E1;
+  background-color: var(--secondary);
   padding: 10px;
   border: 2px solid white;
 }
@@ -277,6 +286,7 @@ article h2 {
   padding-bottom: 20px;
 }
 
+
 /* ---------- Join Page ---------- */
 form {
   margin: 2rem;
@@ -285,7 +295,7 @@ form {
   text-align: center;
 }
 form fieldset.app-info, form fieldset.mem-info, form fieldset.bus-info {
-  background-color: #FEE9E1;
+  background-color: var(--secondary);
   padding: 1rem;
   margin: 1rem;
 }
@@ -293,7 +303,7 @@ form fieldset.tstamp {
   border: none;
 }
 form legend {
-  background-color: #0e5b5d;
+  background-color: var(--primary);
   color: white;
   margin: 1rem;
   padding: .5rem;
@@ -347,12 +357,12 @@ form fieldset.bus-info > label {
   display: block;
 }
 .submitBtn {
-  background-color: #64b6ac;
+  background-color: var(--accent1);
   opacity: 0.8;
   font-size: 1.5rem;
   font-weight: 900;
   margin: 1rem;
-  width: 20rem;
+  width: 90%;
   height: 44px;
 }
 .submission {
@@ -360,7 +370,7 @@ margin-top: 2rem;
 margin-bottom: 2rem;
 }
 .received {
-  background-color: #64b6ac;
+  background-color: var(--accent1);
   opacity: 0.8;
   padding: 1rem;
   font-size: 2rem;
@@ -371,13 +381,13 @@ margin-bottom: 2rem;
   border: 1px solid black;
   padding: 20px;
   text-align: center;
-  background-color:#FEE9E1;
+  background-color:var(--secondary);
   margin: 0.5rem;
   width: 250px;
   height: auto;
 }
 .business:nth-child(even) {
-	background-color: #64b6ac;
+	background-color: var(--accent1);
 }
 .business a {
   color: black;
@@ -417,12 +427,12 @@ margin-bottom: 2rem;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
-  border: 2px solid #B09E99;
+  border: 2px solid var(--accent3);
 }
 
 /* -------------- Banner ----------------*/
 .banner {
-  background-color: #64B6AC;
+  background-color: var(--accent1);
 }
 
 .banner-content {
