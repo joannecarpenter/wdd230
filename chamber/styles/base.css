@@ -256,6 +256,13 @@ footer p {
   grid-template-rows: 3fr 1fr;
   /* grid-gap: 1rem; */
 }
+.wrapper picture {
+  width: 100%;
+}
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
 
 article {
   grid-row: 1 / 2;
